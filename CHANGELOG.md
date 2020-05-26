@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.50.1+rev2
+## (2020-05-26)
+
+* Fallback to labels and partlabels for Jetson devices [Alexandru Costache]
+
 # v2.50.1+rev1
 ## (2020-05-25)
 

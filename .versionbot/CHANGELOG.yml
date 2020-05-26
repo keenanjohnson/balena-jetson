@@ -1,4 +1,31 @@
 - commits:
+    - subject: Fallback to labels and partlabels for Jetson devices
+      hash: 511f7c679224956fcb8d6a62558b8464a2332593
+      body: >
+        Some devices like the Jetson NX and Xavier cannot modify their
+        bootloader
+
+        (cboot) to pass UUIDs, so a device tree is used to pass a LABEL= root
+
+        drive. These devices now fallback to the legacy way of partition
+        detection.
+
+
+        Also, HUP scripts on Jetson devices run BSP partition update scripts and
+
+        these need to fallback to partname resolution.
+
+
+        Patch provided by Alex Gonzalez.
+      footer:
+        Changelog-entry: Fallback to labels and partlabels for Jetson devices
+        changelog-entry: Fallback to labels and partlabels for Jetson devices
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.50.1+rev2
+  date: 2020-05-26T15:09:09.859Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.7.2
       hash: 6cac23c010cb6bfd134d0488b400e814ed28ea71
       body: ''
